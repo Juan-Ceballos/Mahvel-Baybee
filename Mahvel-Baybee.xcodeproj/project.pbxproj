@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DFEF92A84920875EC4938FF /* Pods_Mahvel_BaybeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2FD55BC3F0179343A3C0E /* Pods_Mahvel_BaybeeTests.framework */; };
+		3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */; };
+		3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */; };
+		3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2A26868BAE00C6C1CE /* ViewController.swift */; };
+		3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */; };
+		3EB24C3326868BB100C6C1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB24C3226868BB100C6C1CE /* Assets.xcassets */; };
+		3EB24C3626868BB100C6C1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */; };
+		3EB24C4126868BB100C6C1CE /* Mahvel_BaybeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C4026868BB100C6C1CE /* Mahvel_BaybeeTests.swift */; };
+		3EB24C4C26868BB100C6C1CE /* Mahvel_BaybeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C4B26868BB100C6C1CE /* Mahvel_BaybeeUITests.swift */; };
+		51B008EAF5C09F22224C4B2F /* Pods_Mahvel_Baybee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA011042CB11296B91D85C /* Pods_Mahvel_Baybee.framework */; };
+		CEC7A4DAA1811A6F9BC8A5BB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCC2ABB6EF8B7C136CD83DB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EB24C3D26868BB100C6C1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EB24C1B26868BAE00C6C1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB24C2226868BAE00C6C1CE;
+			remoteInfo = "Mahvel-Baybee";
+		};
+		3EB24C4826868BB100C6C1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EB24C1B26868BAE00C6C1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB24C2226868BAE00C6C1CE;
+			remoteInfo = "Mahvel-Baybee";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14519289C891140CB705A7C1 /* Pods-Mahvel-BaybeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-BaybeeTests.debug.xcconfig"; path = "Target Support Files/Pods-Mahvel-BaybeeTests/Pods-Mahvel-BaybeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BCC2ABB6EF8B7C136CD83DB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFBD43BD727F0E4530F0CFC /* Pods-Mahvel-BaybeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-BaybeeTests.release.xcconfig"; path = "Target Support Files/Pods-Mahvel-BaybeeTests/Pods-Mahvel-BaybeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahvel-Baybee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3EB24C2A26868BAE00C6C1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EB24C3026868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mahvel_Baybee.xcdatamodel; sourceTree = "<group>"; };
+		3EB24C3226868BB100C6C1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EB24C3526868BB100C6C1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EB24C3726868BB100C6C1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB24C3C26868BB100C6C1CE /* Mahvel-BaybeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mahvel-BaybeeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB24C4026868BB100C6C1CE /* Mahvel_BaybeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mahvel_BaybeeTests.swift; sourceTree = "<group>"; };
+		3EB24C4226868BB100C6C1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB24C4726868BB100C6C1CE /* Mahvel-BaybeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mahvel-BaybeeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB24C4B26868BB100C6C1CE /* Mahvel_BaybeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mahvel_BaybeeUITests.swift; sourceTree = "<group>"; };
+		3EB24C4D26868BB100C6C1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4269FF2AD8D84A693A483194 /* Pods-Mahvel-Baybee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-Baybee.debug.xcconfig"; path = "Target Support Files/Pods-Mahvel-Baybee/Pods-Mahvel-Baybee.debug.xcconfig"; sourceTree = "<group>"; };
+		65F2FD55BC3F0179343A3C0E /* Pods_Mahvel_BaybeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahvel_BaybeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7924DAD610D3E855234A19 /* Pods-Mahvel-Baybee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-Baybee.release.xcconfig"; path = "Target Support Files/Pods-Mahvel-Baybee/Pods-Mahvel-Baybee.release.xcconfig"; sourceTree = "<group>"; };
+		7605BD8CAF33ECD6ACCD0CC9 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.release.xcconfig"; path = "Target Support Files/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7B0CC7E70E66D9988B20026 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAAA011042CB11296B91D85C /* Pods_Mahvel_Baybee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahvel_Baybee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB24C2026868BAE00C6C1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B008EAF5C09F22224C4B2F /* Pods_Mahvel_Baybee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C3926868BB100C6C1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFEF92A84920875EC4938FF /* Pods_Mahvel_BaybeeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C4426868BB100C6C1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC7A4DAA1811A6F9BC8A5BB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3307AF13AF53178873785AEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAAA011042CB11296B91D85C /* Pods_Mahvel_Baybee.framework */,
+				3BCC2ABB6EF8B7C136CD83DB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework */,
+				65F2FD55BC3F0179343A3C0E /* Pods_Mahvel_BaybeeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33CA01E32A68D062A62C4897 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4269FF2AD8D84A693A483194 /* Pods-Mahvel-Baybee.debug.xcconfig */,
+				6A7924DAD610D3E855234A19 /* Pods-Mahvel-Baybee.release.xcconfig */,
+				A7B0CC7E70E66D9988B20026 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.debug.xcconfig */,
+				7605BD8CAF33ECD6ACCD0CC9 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.release.xcconfig */,
+				14519289C891140CB705A7C1 /* Pods-Mahvel-BaybeeTests.debug.xcconfig */,
+				3CFBD43BD727F0E4530F0CFC /* Pods-Mahvel-BaybeeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3E1ADDDC26868CEF00B73947 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		3EB24C1A26868BAE00C6C1CE = {
+			isa = PBXGroup;
+			children = (
+				3EB24C2526868BAE00C6C1CE /* Mahvel-Baybee */,
+				3EB24C3F26868BB100C6C1CE /* Mahvel-BaybeeTests */,
+				3EB24C4A26868BB100C6C1CE /* Mahvel-BaybeeUITests */,
+				3EB24C2426868BAE00C6C1CE /* Products */,
+				33CA01E32A68D062A62C4897 /* Pods */,
+				3307AF13AF53178873785AEB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EB24C2426868BAE00C6C1CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */,
+				3EB24C3C26868BB100C6C1CE /* Mahvel-BaybeeTests.xctest */,
+				3EB24C4726868BB100C6C1CE /* Mahvel-BaybeeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EB24C2526868BAE00C6C1CE /* Mahvel-Baybee */ = {
+			isa = PBXGroup;
+			children = (
+				3E1ADDDC26868CEF00B73947 /* Secrets */,
+				3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */,
+				3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */,
+				3EB24C2A26868BAE00C6C1CE /* ViewController.swift */,
+				3EB24C3226868BB100C6C1CE /* Assets.xcassets */,
+				3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */,
+				3EB24C3726868BB100C6C1CE /* Info.plist */,
+				3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */,
+			);
+			path = "Mahvel-Baybee";
+			sourceTree = "<group>";
+		};
+		3EB24C3F26868BB100C6C1CE /* Mahvel-BaybeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C4026868BB100C6C1CE /* Mahvel_BaybeeTests.swift */,
+				3EB24C4226868BB100C6C1CE /* Info.plist */,
+			);
+			path = "Mahvel-BaybeeTests";
+			sourceTree = "<group>";
+		};
+		3EB24C4A26868BB100C6C1CE /* Mahvel-BaybeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C4B26868BB100C6C1CE /* Mahvel_BaybeeUITests.swift */,
+				3EB24C4D26868BB100C6C1CE /* Info.plist */,
+			);
+			path = "Mahvel-BaybeeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EB24C2226868BAE00C6C1CE /* Mahvel-Baybee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB24C5026868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-Baybee" */;
+			buildPhases = (
+				6D11F8A66D6DA20167037C27 /* [CP] Check Pods Manifest.lock */,
+				3EB24C1F26868BAE00C6C1CE /* Sources */,
+				3EB24C2026868BAE00C6C1CE /* Frameworks */,
+				3EB24C2126868BAE00C6C1CE /* Resources */,
+				61F70C14A4BE6959EA43B138 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mahvel-Baybee";
+			productName = "Mahvel-Baybee";
+			productReference = 3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EB24C3B26868BB100C6C1CE /* Mahvel-BaybeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB24C5326868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-BaybeeTests" */;
+			buildPhases = (
+				5947417732945B64DA254D88 /* [CP] Check Pods Manifest.lock */,
+				3EB24C3826868BB100C6C1CE /* Sources */,
+				3EB24C3926868BB100C6C1CE /* Frameworks */,
+				3EB24C3A26868BB100C6C1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EB24C3E26868BB100C6C1CE /* PBXTargetDependency */,
+			);
+			name = "Mahvel-BaybeeTests";
+			productName = "Mahvel-BaybeeTests";
+			productReference = 3EB24C3C26868BB100C6C1CE /* Mahvel-BaybeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EB24C4626868BB100C6C1CE /* Mahvel-BaybeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB24C5626868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-BaybeeUITests" */;
+			buildPhases = (
+				1E222DF6D1E853DCF7824EDD /* [CP] Check Pods Manifest.lock */,
+				3EB24C4326868BB100C6C1CE /* Sources */,
+				3EB24C4426868BB100C6C1CE /* Frameworks */,
+				3EB24C4526868BB100C6C1CE /* Resources */,
+				A8D046BF4AC1BC19A06F4F7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EB24C4926868BB100C6C1CE /* PBXTargetDependency */,
+			);
+			name = "Mahvel-BaybeeUITests";
+			productName = "Mahvel-BaybeeUITests";
+			productReference = 3EB24C4726868BB100C6C1CE /* Mahvel-BaybeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EB24C1B26868BAE00C6C1CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3EB24C2226868BAE00C6C1CE = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					3EB24C3B26868BB100C6C1CE = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3EB24C2226868BAE00C6C1CE;
+					};
+					3EB24C4626868BB100C6C1CE = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3EB24C2226868BAE00C6C1CE;
+					};
+				};
+			};
+			buildConfigurationList = 3EB24C1E26868BAE00C6C1CE /* Build configuration list for PBXProject "Mahvel-Baybee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EB24C1A26868BAE00C6C1CE;
+			productRefGroup = 3EB24C2426868BAE00C6C1CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EB24C2226868BAE00C6C1CE /* Mahvel-Baybee */,
+				3EB24C3B26868BB100C6C1CE /* Mahvel-BaybeeTests */,
+				3EB24C4626868BB100C6C1CE /* Mahvel-BaybeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EB24C2126868BAE00C6C1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB24C3626868BB100C6C1CE /* LaunchScreen.storyboard in Resources */,
+				3EB24C3326868BB100C6C1CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C3A26868BB100C6C1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C4526868BB100C6C1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E222DF6D1E853DCF7824EDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5947417732945B64DA254D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mahvel-BaybeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61F70C14A4BE6959EA43B138 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee/Pods-Mahvel-Baybee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee/Pods-Mahvel-Baybee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee/Pods-Mahvel-Baybee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D11F8A66D6DA20167037C27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mahvel-Baybee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8D046BF4AC1BC19A06F4F7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests/Pods-Mahvel-Baybee-Mahvel-BaybeeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB24C1F26868BAE00C6C1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */,
+				3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */,
+				3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */,
+				3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C3826868BB100C6C1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB24C4126868BB100C6C1CE /* Mahvel_BaybeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB24C4326868BB100C6C1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB24C4C26868BB100C6C1CE /* Mahvel_BaybeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EB24C3E26868BB100C6C1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB24C2226868BAE00C6C1CE /* Mahvel-Baybee */;
+			targetProxy = 3EB24C3D26868BB100C6C1CE /* PBXContainerItemProxy */;
+		};
+		3EB24C4926868BB100C6C1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB24C2226868BAE00C6C1CE /* Mahvel-Baybee */;
+			targetProxy = 3EB24C4826868BB100C6C1CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB24C3526868BB100C6C1CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EB24C4E26868BB100C6C1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EB24C4F26868BB100C6C1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EB24C5126868BB100C6C1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4269FF2AD8D84A693A483194 /* Pods-Mahvel-Baybee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-Baybee/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-Baybee";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EB24C5226868BB100C6C1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7924DAD610D3E855234A19 /* Pods-Mahvel-Baybee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-Baybee/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-Baybee";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EB24C5426868BB100C6C1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14519289C891140CB705A7C1 /* Pods-Mahvel-BaybeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-BaybeeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-BaybeeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mahvel-Baybee.app/Mahvel-Baybee";
+			};
+			name = Debug;
+		};
+		3EB24C5526868BB100C6C1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFBD43BD727F0E4530F0CFC /* Pods-Mahvel-BaybeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-BaybeeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-BaybeeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mahvel-Baybee.app/Mahvel-Baybee";
+			};
+			name = Release;
+		};
+		3EB24C5726868BB100C6C1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B0CC7E70E66D9988B20026 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-BaybeeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-BaybeeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mahvel-Baybee";
+			};
+			name = Debug;
+		};
+		3EB24C5826868BB100C6C1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7605BD8CAF33ECD6ACCD0CC9 /* Pods-Mahvel-Baybee-Mahvel-BaybeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UA5RNM528;
+				INFOPLIST_FILE = "Mahvel-BaybeeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pursuit.Mahvel-BaybeeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mahvel-Baybee";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EB24C1E26868BAE00C6C1CE /* Build configuration list for PBXProject "Mahvel-Baybee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB24C4E26868BB100C6C1CE /* Debug */,
+				3EB24C4F26868BB100C6C1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB24C5026868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-Baybee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB24C5126868BB100C6C1CE /* Debug */,
+				3EB24C5226868BB100C6C1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB24C5326868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-BaybeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB24C5426868BB100C6C1CE /* Debug */,
+				3EB24C5526868BB100C6C1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB24C5626868BB100C6C1CE /* Build configuration list for PBXNativeTarget "Mahvel-BaybeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB24C5726868BB100C6C1CE /* Debug */,
+				3EB24C5826868BB100C6C1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EB24C3026868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodel */,
+			);
+			currentVersion = 3EB24C3026868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodel */;
+			path = Mahvel_Baybee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3EB24C1B26868BAE00C6C1CE /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Mahvel_BaybeeTests {
+  umbrella header "Pods-Mahvel-BaybeeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
