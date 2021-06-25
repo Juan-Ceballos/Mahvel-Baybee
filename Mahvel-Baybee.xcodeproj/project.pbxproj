@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DFEF92A84920875EC4938FF /* Pods_Mahvel_BaybeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2FD55BC3F0179343A3C0E /* Pods_Mahvel_BaybeeTests.framework */; };
+		3E1ADDE6268696B800B73947 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1ADDE5268696B800B73947 /* Secrets.swift */; };
 		3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */; };
 		3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */; };
 		3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2A26868BAE00C6C1CE /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		14519289C891140CB705A7C1 /* Pods-Mahvel-BaybeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-BaybeeTests.debug.xcconfig"; path = "Target Support Files/Pods-Mahvel-BaybeeTests/Pods-Mahvel-BaybeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BCC2ABB6EF8B7C136CD83DB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFBD43BD727F0E4530F0CFC /* Pods-Mahvel-BaybeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-BaybeeTests.release.xcconfig"; path = "Target Support Files/Pods-Mahvel-BaybeeTests/Pods-Mahvel-BaybeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E1ADDE5268696B800B73947 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahvel-Baybee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		3E1ADDDC26868CEF00B73947 /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
+				3E1ADDE5268696B800B73947 /* Secrets.swift */,
 			);
 			path = Secrets;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */,
+				3E1ADDE6268696B800B73947 /* Secrets.swift in Sources */,
 				3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */,
 				3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */,
 				3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */,
