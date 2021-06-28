@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainMahvelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(named: "MainMahvelBackground")
     }
 
 

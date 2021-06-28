@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		1DFEF92A84920875EC4938FF /* Pods_Mahvel_BaybeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2FD55BC3F0179343A3C0E /* Pods_Mahvel_BaybeeTests.framework */; };
 		3E1ADDE6268696B800B73947 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1ADDE5268696B800B73947 /* Secrets.swift */; };
+		3EA9687E268A792700C92913 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9687D268A792700C92913 /* AppError.swift */; };
+		3EA96883268A794A00C92913 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA96882268A794A00C92913 /* NetworkHelper.swift */; };
+		3EA96888268A795F00C92913 /* MarvelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA96887268A795F00C92913 /* MarvelAPIClient.swift */; };
+		3EA9688D268A797E00C92913 /* MainMahvelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9688C268A797E00C92913 /* MainMahvelView.swift */; };
 		3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */; };
 		3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */; };
-		3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2A26868BAE00C6C1CE /* ViewController.swift */; };
+		3EB24C2B26868BAE00C6C1CE /* MainMahvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2A26868BAE00C6C1CE /* MainMahvelViewController.swift */; };
 		3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */; };
 		3EB24C3326868BB100C6C1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB24C3226868BB100C6C1CE /* Assets.xcassets */; };
 		3EB24C3626868BB100C6C1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */; };
@@ -43,10 +47,14 @@
 		3BCC2ABB6EF8B7C136CD83DB /* Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahvel_Baybee_Mahvel_BaybeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFBD43BD727F0E4530F0CFC /* Pods-Mahvel-BaybeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahvel-BaybeeTests.release.xcconfig"; path = "Target Support Files/Pods-Mahvel-BaybeeTests/Pods-Mahvel-BaybeeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E1ADDE5268696B800B73947 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		3EA9687D268A792700C92913 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		3EA96882268A794A00C92913 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		3EA96887268A795F00C92913 /* MarvelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIClient.swift; sourceTree = "<group>"; };
+		3EA9688C268A797E00C92913 /* MainMahvelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMahvelView.swift; sourceTree = "<group>"; };
 		3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahvel-Baybee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EB24C2A26868BAE00C6C1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EB24C2A26868BAE00C6C1CE /* MainMahvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMahvelViewController.swift; sourceTree = "<group>"; };
 		3EB24C3026868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mahvel_Baybee.xcdatamodel; sourceTree = "<group>"; };
 		3EB24C3226868BB100C6C1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB24C3526868BB100C6C1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,7 +127,7 @@
 		3E148E03268A32D90027DBCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3EB24C2A26868BAE00C6C1CE /* ViewController.swift */,
+				3EB24C2A26868BAE00C6C1CE /* MainMahvelViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 		3E148E05268A330B0027DBCC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3EA9688C268A797E00C92913 /* MainMahvelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +162,9 @@
 		3E148E07268A33170027DBCC /* NetworkingServices */ = {
 			isa = PBXGroup;
 			children = (
+				3EA9687D268A792700C92913 /* AppError.swift */,
+				3EA96882268A794A00C92913 /* NetworkHelper.swift */,
+				3EA96887268A795F00C92913 /* MarvelAPIClient.swift */,
 			);
 			path = NetworkingServices;
 			sourceTree = "<group>";
@@ -456,9 +468,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB24C2B26868BAE00C6C1CE /* ViewController.swift in Sources */,
+				3EA96888268A795F00C92913 /* MarvelAPIClient.swift in Sources */,
+				3EA96883268A794A00C92913 /* NetworkHelper.swift in Sources */,
+				3EB24C2B26868BAE00C6C1CE /* MainMahvelViewController.swift in Sources */,
 				3E1ADDE6268696B800B73947 /* Secrets.swift in Sources */,
+				3EA9687E268A792700C92913 /* AppError.swift in Sources */,
 				3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */,
+				3EA9688D268A797E00C92913 /* MainMahvelView.swift in Sources */,
 				3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */,
 				3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */,
 			);
