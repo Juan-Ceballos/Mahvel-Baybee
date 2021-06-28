@@ -116,6 +116,47 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3E148E03268A32D90027DBCC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C2A26868BAE00C6C1CE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E148E04268A32EA0027DBCC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */,
+				3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */,
+				3EB24C3226868BB100C6C1CE /* Assets.xcassets */,
+				3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3E148E05268A330B0027DBCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E148E06268A33120027DBCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E148E07268A33170027DBCC /* NetworkingServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
 		3E1ADDDC26868CEF00B73947 /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +190,13 @@
 		3EB24C2526868BAE00C6C1CE /* Mahvel-Baybee */ = {
 			isa = PBXGroup;
 			children = (
+				3E148E07268A33170027DBCC /* NetworkingServices */,
+				3E148E06268A33120027DBCC /* Models */,
+				3E148E05268A330B0027DBCC /* Views */,
+				3E148E04268A32EA0027DBCC /* SupportingFiles */,
+				3E148E03268A32D90027DBCC /* Controllers */,
 				3E1ADDDC26868CEF00B73947 /* Secrets */,
-				3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */,
-				3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */,
-				3EB24C2A26868BAE00C6C1CE /* ViewController.swift */,
-				3EB24C3226868BB100C6C1CE /* Assets.xcassets */,
-				3EB24C3426868BB100C6C1CE /* LaunchScreen.storyboard */,
 				3EB24C3726868BB100C6C1CE /* Info.plist */,
-				3EB24C2F26868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld */,
 			);
 			path = "Mahvel-Baybee";
 			sourceTree = "<group>";
