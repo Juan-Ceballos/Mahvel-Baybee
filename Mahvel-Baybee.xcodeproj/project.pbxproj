@@ -13,6 +13,7 @@
 		3EA96883268A794A00C92913 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA96882268A794A00C92913 /* NetworkHelper.swift */; };
 		3EA96888268A795F00C92913 /* MarvelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA96887268A795F00C92913 /* MarvelAPIClient.swift */; };
 		3EA9688D268A797E00C92913 /* MainMahvelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9688C268A797E00C92913 /* MainMahvelView.swift */; };
+		3EA96893268BD2BB00C92913 /* MainSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA96892268BD2BB00C92913 /* MainSectionCell.swift */; };
 		3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */; };
 		3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */; };
 		3EB24C2B26868BAE00C6C1CE /* MainMahvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB24C2A26868BAE00C6C1CE /* MainMahvelViewController.swift */; };
@@ -51,6 +52,7 @@
 		3EA96882268A794A00C92913 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		3EA96887268A795F00C92913 /* MarvelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIClient.swift; sourceTree = "<group>"; };
 		3EA9688C268A797E00C92913 /* MainMahvelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMahvelView.swift; sourceTree = "<group>"; };
+		3EA96892268BD2BB00C92913 /* MainSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionCell.swift; sourceTree = "<group>"; };
 		3EB24C2326868BAE00C6C1CE /* Mahvel-Baybee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahvel-Baybee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB24C2626868BAE00C6C1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB24C2826868BAE00C6C1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA9688C268A797E00C92913 /* MainMahvelView.swift */,
+				3EA96892268BD2BB00C92913 /* MainSectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				3E1ADDE6268696B800B73947 /* Secrets.swift in Sources */,
 				3EA9687E268A792700C92913 /* AppError.swift in Sources */,
 				3EB24C2726868BAE00C6C1CE /* AppDelegate.swift in Sources */,
+				3EA96893268BD2BB00C92913 /* MainSectionCell.swift in Sources */,
 				3EA9688D268A797E00C92913 /* MainMahvelView.swift in Sources */,
 				3EB24C3126868BAE00C6C1CE /* Mahvel_Baybee.xcdatamodeld in Sources */,
 				3EB24C2926868BAE00C6C1CE /* SceneDelegate.swift in Sources */,

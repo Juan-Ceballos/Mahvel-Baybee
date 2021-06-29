@@ -1,0 +1,44 @@
+//
+//  MainSectionCell.swift
+//  Mahvel-Baybee
+//
+//  Created by Juan Ceballos on 6/29/21.
+//
+
+import UIKit
+import SnapKit
+
+class MainSectionCell: UICollectionViewCell {
+    
+    static let reuseIdentifier = "mainSectionCell"
+    
+    public lazy var textLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: UIScreen.main.bounds)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        setupTextLabelConstraints()
+    }
+    
+    private func setupTextLabelConstraints() {
+        addSubview(textLabel)
+        textLabel.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.leading.equalTo(self.snp.leading).offset(8)
+            make.trailing.equalTo(self.snp.trailing).offset(-8)
+        }
+    }
+}
