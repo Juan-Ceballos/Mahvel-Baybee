@@ -13,6 +13,9 @@ class MainMahvelViewController: UIViewController {
     
     override func loadView() {
         view = mMView
+        let patternView = PatternView()
+        patternView.frame = CGRect(x: 10, y: 10, width: 200, height: 200)
+        view.addSubview(patternView)
     }
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, String>!
