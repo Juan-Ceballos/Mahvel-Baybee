@@ -15,7 +15,21 @@ class MainSectionCell: UICollectionViewCell {
     public lazy var textLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .systemYellow
+        label.font = UIFont(name: Fonts.badaboom, size: 35)
+        label.adjustsFontSizeToFitWidth = true
         return label
+    }()
+    
+    public lazy var heroIcon: UIImageView = {
+        let iv = UIImageView()
+        return iv
+    }()
+    
+    public lazy var patternView: UIView = {
+        let pv = PatternView()
+        pv.frame = CGRect(x: 0, y: 0, width: contentView.frame.size.width, height: contentView.frame.size.width)
+        return pv
     }()
     
     override init(frame: CGRect) {
@@ -29,7 +43,19 @@ class MainSectionCell: UICollectionViewCell {
     }
     
     private func commonInit() {
+        setupPatternViewConstraints()
         setupTextLabelConstraints()
+        //setupHeroIconConstraints()
+    }
+    
+    private func setupPatternViewConstraints() {
+        addSubview(patternView)
+        patternView.snp.makeConstraints { (make) in
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
     }
     
     private func setupTextLabelConstraints() {
@@ -37,8 +63,20 @@ class MainSectionCell: UICollectionViewCell {
         textLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
+            make.height.equalTo(self.snp.height).multipliedBy(0.3)
             make.leading.equalTo(self.snp.leading).offset(8)
             make.trailing.equalTo(self.snp.trailing).offset(-8)
         }
     }
+    
+    private func setupHeroIconConstraints() {
+        addSubview(heroIcon)
+        heroIcon.snp.makeConstraints { (make) in
+            make.top.equalTo(textLabel.snp.bottom)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.3)
+        }
+    }
+    
 }

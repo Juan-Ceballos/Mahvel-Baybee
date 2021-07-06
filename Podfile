@@ -7,6 +7,7 @@ target 'Mahvel-Baybee' do
 
   # Pods for Mahvel-Baybee
   pod 'SnapKit'
+  pod 'Kingfisher'
 
   target 'Mahvel-BaybeeTests' do
     inherit! :search_paths

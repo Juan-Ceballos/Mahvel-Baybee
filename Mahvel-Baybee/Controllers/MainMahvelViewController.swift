@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainMahvelViewController: UIViewController {
 
@@ -13,9 +14,6 @@ class MainMahvelViewController: UIViewController {
     
     override func loadView() {
         view = mMView
-        let patternView = PatternView()
-        patternView.frame = CGRect(x: 10, y: 10, width: 200, height: 200)
-        view.addSubview(patternView)
     }
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, String>!
@@ -25,6 +23,8 @@ class MainMahvelViewController: UIViewController {
         view.backgroundColor = UIColor(named: "MainMahvelBackground")
         configureDataSource()
         configureCollectionView()
+        view.backgroundColor = .systemIndigo
+        navigationController?.navigationBar.backgroundColor = .systemBackground
     }
     
     private func configureCollectionView() {
@@ -37,14 +37,29 @@ class MainMahvelViewController: UIViewController {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainSectionCell.reuseIdentifier, for: indexPath) as? MainSectionCell else {
                 fatalError()
             }
-            cell.textLabel.text = "MAHVEL"
-            cell.backgroundColor = .blue
+            cell.textLabel.text = item
+//            DispatchQueue.main.async {
+//                MarvelAPIClient.fetchMarvelCharacter(urlRequest: "https://gateway.marvel.com:443/v1/public/characters?name=wolverine&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)") { (result) in
+//                    switch result {
+//                    case .failure(let error):
+//                        print(error)
+//                    case .success(let mvc):
+//                        let url = URL(string: "\(mvc.data.results.first?.thumbnail.path ?? "").jpg")
+//                        DispatchQueue.main.async {
+//                            cell.heroIcon.kf.setImage(with: url)
+//                        }
+//                    }
+//                }
+//            }
+            
             return cell
         })
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
-        snapshot.appendSections([.comics])
-        snapshot.appendItems(["Comics", "Movies", "Shows", "Games", "Events", "Merchandise"])
+        snapshot.appendSections([.panels, .grid])
+        snapshot.appendItems(["Comics", "Shows", "Events", "Movies", "Merchandise", "Games"], toSection: .panels)
+        
+        snapshot.appendItems(["One", "Two", "Three"], toSection: .grid)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 
