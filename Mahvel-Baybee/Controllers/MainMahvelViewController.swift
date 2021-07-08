@@ -9,60 +9,73 @@ import UIKit
 import Kingfisher
 
 class MainMahvelViewController: UIViewController {
-
+    
     let mMView = MainMahvelView()
     
     override func loadView() {
         view = mMView
     }
     
-    private var dataSource: UICollectionViewDiffableDataSource<Section, String>!
+    private typealias DataSource = UICollectionViewDiffableDataSource<Section, String>
+    private var dataSource: DataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "MainMahvelBackground")
-        configureDataSource()
         configureCollectionView()
+        configureDataSource()
         view.backgroundColor = .systemIndigo
         navigationController?.navigationBar.backgroundColor = .systemBackground
+        let allChars = CoreDataManager.shared.fetchAllMarvelCharacters()
+        print(allChars.count)
     }
     
     private func configureCollectionView() {
-        mMView.cv.register(MainSectionCell.self, forCellWithReuseIdentifier: MainSectionCell.reuseIdentifier)
+        mMView.cv.register(CharacterCell.self, forCellWithReuseIdentifier: CharacterCell.reuseIdentifier)
     }
     
     private func configureDataSource() {
+        print("come on first thing")
         dataSource = UICollectionViewDiffableDataSource<Section, String>(collectionView: mMView.cv, cellProvider: {
             (collectionView, indexPath, item) -> UICollectionViewCell? in
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainSectionCell.reuseIdentifier, for: indexPath) as? MainSectionCell else {
+            print("second thing")
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterCell.reuseIdentifier, for: indexPath) as? CharacterCell else {
+                print("You fucked up")
                 fatalError()
             }
-            cell.textLabel.text = item
-//            DispatchQueue.main.async {
-//                MarvelAPIClient.fetchMarvelCharacter(urlRequest: "https://gateway.marvel.com:443/v1/public/characters?name=wolverine&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)") { (result) in
-//                    switch result {
-//                    case .failure(let error):
-//                        print(error)
-//                    case .success(let mvc):
-//                        let url = URL(string: "\(mvc.data.results.first?.thumbnail.path ?? "").jpg")
-//                        DispatchQueue.main.async {
-//                            cell.heroIcon.kf.setImage(with: url)
+            
+//            let allChars = CoreDataManager.shared.fetchAllMarvelCharacters()
+//            print(allChars.count)
+//            print("Im here kill me")
+//            if allChars.count < 1 {
+//                for name in CharacterNameList.characterNames {
+//                    let urlRequest = "https://gateway.marvel.com:443/v1/public/characters?name=\(name)&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)"
+//                    MarvelAPIClient.fetchMarvelCharacter(urlRequest: urlRequest) { (result) in
+//                        switch result {
+//                        case .failure(let error):
+//                            print("failure fetch character with name filter: \(error)")
+//                        case .success(let marvelCharacter):
+//                            let _ = CoreDataManager.shared.createMarvelCharacter(name: marvelCharacter.data.results[0].name, dateCreated: Date(), img: "\(marvelCharacter.data.results[0].thumbnail.path).jpg", cacheDate: Date(), cacheExpDate: Date())
+//                            print(marvelCharacter.data.results[0].name)
 //                        }
 //                    }
 //                }
 //            }
             
+            
+            cell.heroIcon.image = UIImage(systemName: "pencil")
+            cell.backgroundColor = .purple
             return cell
         })
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
-        snapshot.appendSections([.panels, .grid])
-        snapshot.appendItems(["Comics", "Shows", "Events", "Movies", "Merchandise", "Games"], toSection: .panels)
+        snapshot.appendSections([.grid])
         
-        snapshot.appendItems(["One", "Two", "Three"], toSection: .grid)
+        //let allCharacters = CoreDataManager.shared.fetchAllMarvelCharacters()
+        snapshot.appendItems(CharacterNameList.characterNames, toSection: .grid)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
-
-
+    
+    
 }
 

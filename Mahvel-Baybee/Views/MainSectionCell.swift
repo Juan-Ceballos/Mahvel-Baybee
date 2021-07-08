@@ -21,11 +21,6 @@ class MainSectionCell: UICollectionViewCell {
         return label
     }()
     
-    public lazy var heroIcon: UIImageView = {
-        let iv = UIImageView()
-        return iv
-    }()
-    
     public lazy var patternView: UIView = {
         let pv = PatternView()
         pv.frame = CGRect(x: 0, y: 0, width: contentView.frame.size.width, height: contentView.frame.size.width)
@@ -45,7 +40,6 @@ class MainSectionCell: UICollectionViewCell {
     private func commonInit() {
         setupPatternViewConstraints()
         setupTextLabelConstraints()
-        //setupHeroIconConstraints()
     }
     
     private func setupPatternViewConstraints() {
@@ -66,16 +60,6 @@ class MainSectionCell: UICollectionViewCell {
             make.height.equalTo(self.snp.height).multipliedBy(0.3)
             make.leading.equalTo(self.snp.leading).offset(8)
             make.trailing.equalTo(self.snp.trailing).offset(-8)
-        }
-    }
-    
-    private func setupHeroIconConstraints() {
-        addSubview(heroIcon)
-        heroIcon.snp.makeConstraints { (make) in
-            make.top.equalTo(textLabel.snp.bottom)
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.3)
         }
     }
     

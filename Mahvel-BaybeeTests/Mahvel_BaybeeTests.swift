@@ -49,4 +49,23 @@ class Mahvel_BaybeeTests: XCTestCase {
         
     }
     
+//    func testCreateMarvelCharacterCD() {
+//        let exp = XCTestExpectation(description: "created wolverine and cd")
+//        let urlRequest = "https://gateway.marvel.com:443/v1/public/characters?name=wolverine&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)"
+//        
+//        MarvelAPIClient.fetchMarvelCharacter(urlRequest: urlRequest) { (result) in
+//            switch result {
+//            case .failure(let error):
+//                print("\(error)")
+//                XCTFail("\(error)")
+//            case .success(let marvelCharacter):
+//                let wolvy = CoreDataManager.shared.createMarvelCharacter(name: marvelCharacter.data.results[0].name, dateCreated: Date(), img: "\(marvelCharacter.data.results[0].thumbnail.path).jpg", cacheDate: Date(), cacheExpDate: Date())
+//                exp.fulfill()
+//                XCTAssertEqual(wolvy.name, "Wolverine")
+//            }
+//        }
+//        
+//        wait(for: [exp], timeout: 5.0)
+//    }
+    
 }
