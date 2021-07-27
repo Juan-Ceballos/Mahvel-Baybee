@@ -16,18 +16,37 @@ class MainMahvelViewController: UIViewController {
         view = mMView
     }
     
-    private typealias DataSource = UICollectionViewDiffableDataSource<Section, String>
+    private typealias DataSource = UICollectionViewDiffableDataSource<Section, MarvelCharacterCD>
     private var dataSource: DataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "MainMahvelBackground")
-        configureCollectionView()
-        configureDataSource()
         view.backgroundColor = .systemIndigo
         navigationController?.navigationBar.backgroundColor = .systemBackground
-        let allChars = CoreDataManager.shared.fetchAllMarvelCharacters()
-        print(allChars.count)
+        configureCollectionView()
+        configureDataSource()
+        //storeHeroImageURLCD()
+        //print(CoreDataManager.shared.fetchAllMarvelCharacters().count)
+    }
+    
+    private func storeHeroImageURLCD() {
+        DispatchQueue.main.async {
+            for name in PopularMarvelHeroes.characterNames {
+                MarvelAPIClient.fetchMarvelCharacter(nameParam: name, urlRequest: "https://gateway.marvel.com:443/v1/public/characters?name=\(name)&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)") { (result) in
+                    switch result {
+                    case .failure(let appError):
+                        print("fetch api key name: \(appError)")
+                    case .success(let mv):
+                        DispatchQueue.main.async {
+                            let _ = CoreDataManager.shared.createMarvelCharacter(name: mv.data.results.first?.name ?? "Gambit", dateCreated: Date(), img: "\(mv.data.results.first?.thumbnail.path ?? "no path").jpg", cacheDate: Date(), cacheExpDate: Date())
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
     }
     
     private func configureCollectionView() {
@@ -36,7 +55,7 @@ class MainMahvelViewController: UIViewController {
     
     private func configureDataSource() {
         print("come on first thing")
-        dataSource = UICollectionViewDiffableDataSource<Section, String>(collectionView: mMView.cv, cellProvider: {
+        dataSource = UICollectionViewDiffableDataSource<Section, MarvelCharacterCD>(collectionView: mMView.cv, cellProvider: {
             (collectionView, indexPath, item) -> UICollectionViewCell? in
             print("second thing")
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterCell.reuseIdentifier, for: indexPath) as? CharacterCell else {
@@ -44,38 +63,18 @@ class MainMahvelViewController: UIViewController {
                 fatalError()
             }
             
-//            let allChars = CoreDataManager.shared.fetchAllMarvelCharacters()
-//            print(allChars.count)
-//            print("Im here kill me")
-//            if allChars.count < 1 {
-//                for name in CharacterNameList.characterNames {
-//                    let urlRequest = "https://gateway.marvel.com:443/v1/public/characters?name=\(name)&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)"
-//                    MarvelAPIClient.fetchMarvelCharacter(urlRequest: urlRequest) { (result) in
-//                        switch result {
-//                        case .failure(let error):
-//                            print("failure fetch character with name filter: \(error)")
-//                        case .success(let marvelCharacter):
-//                            let _ = CoreDataManager.shared.createMarvelCharacter(name: marvelCharacter.data.results[0].name, dateCreated: Date(), img: "\(marvelCharacter.data.results[0].thumbnail.path).jpg", cacheDate: Date(), cacheExpDate: Date())
-//                            print(marvelCharacter.data.results[0].name)
-//                        }
-//                    }
-//                }
-//            }
-            
-            
-            cell.heroIcon.image = UIImage(systemName: "pencil")
-            cell.backgroundColor = .purple
+            let url = URL(string: item.img ?? "invalid url path")
+            cell.heroIcon.kf.setImage(with: url)
             return cell
         })
         
-        var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, MarvelCharacterCD>()
         snapshot.appendSections([.grid])
         
-        //let allCharacters = CoreDataManager.shared.fetchAllMarvelCharacters()
-        snapshot.appendItems(CharacterNameList.characterNames, toSection: .grid)
+        let popularCharacters = CoreDataManager.shared.fetchAllMarvelCharacters()
+        snapshot.appendItems(popularCharacters, toSection: .grid)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
-    
     
 }
 

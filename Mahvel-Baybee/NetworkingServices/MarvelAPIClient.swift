@@ -9,12 +9,10 @@ import Foundation
 
 class MarvelAPIClient {
     let baseURL = "https://gateway.marvel.com:443/v1/public/"
-    public static func fetchMarvelCharacter(urlRequest: String, completion: @escaping (Result<MarvelCharacter, AppError>) -> ()) {
+    public static func fetchMarvelCharacter(nameParam: String, urlRequest: String, completion: @escaping (Result<MarvelCharacter, AppError>) -> ()) {
         
-        let urlEndpoint = "https://gateway.marvel.com:443/v1/public/characters?name=wolverine&ts=15678&apikey=\(SecretKey.publicKey)&hash=\(SecretKey.hash)"
-        
-        guard let url = URL(string: urlEndpoint) else {
-            completion(.failure(.badURL(urlEndpoint)))
+        guard let url = URL(string: urlRequest) else {
+            completion(.failure(.badURL(urlRequest)))
             return
         }
         

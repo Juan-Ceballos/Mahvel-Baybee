@@ -37,14 +37,13 @@ class MainMahvelView: UIView {
     
     private func createLayout() -> UICollectionViewLayout {
         
-        let itemWidth = NSCollectionLayoutDimension.fractionalWidth(0.3)
+        let itemWidth = NSCollectionLayoutDimension.fractionalWidth(0.33)
         let itemSize = NSCollectionLayoutSize(widthDimension: itemWidth, heightDimension: itemWidth)
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.33))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.2))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-        
       
         let section = NSCollectionLayoutSection(group: group)
         
